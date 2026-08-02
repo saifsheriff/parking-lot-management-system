@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pls.LogsController" prefWidth="500.0" prefHeight="400.0">
+    <children>
+        <TableView fx:id="logsTableView" layoutX="20.0" layoutY="20.0" prefWidth="460.0" prefHeight="360.0">
+            <columns>
+                <TableColumn fx:id="timestampColumn" text="Timestamp" prefWidth="200.0"/>
+                <TableColumn fx:id="activityColumn" text="Activity" prefWidth="240.0"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

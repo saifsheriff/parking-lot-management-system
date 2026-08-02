@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #f9f9f9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pls.PaymentController">
+    <children>
+        <Label layoutX="175.0" layoutY="14.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Payment Form" />
+        
+        <Label fx:id="amountLabel" layoutX="205.0" layoutY="57.0" style="-fx-font-size: 14px; -fx-text-fill: #555555;" text="Amount: $" />
+        
+        <ComboBox fx:id="paymentMethodComboBox" layoutX="137.0" layoutY="105.0" prefWidth="200" promptText="Select Payment Method" style="-fx-background-radius: 6; -fx-padding: 6; -fx-border-color: #cccccc; -fx-border-radius: 6;" />
+        
+        <Button layoutX="187.0" layoutY="169.0" onAction="#handlePayment" prefWidth="100" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 6;" text="Submit" />
+        
+        <Label fx:id="paymentStatusLabel" layoutX="50.0" layoutY="195.0" style="-fx-text-fill: #ff0000; -fx-font-size: 12px;" />
+    </children>
+</AnchorPane>
